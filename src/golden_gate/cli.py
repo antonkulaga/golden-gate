@@ -5,6 +5,7 @@ import typer
 from pathlib import Path
 from pycomfort.logging import to_nice_stdout, to_nice_file
 import eliot
+import dnacauldron as dc
 
 app = typer.Typer()
 
@@ -53,7 +54,7 @@ def process(
         for plasmid_path in plasmid:
             action.log(f"Plasmids folder: {plasmid_path}")
             
-        import dnacauldron as dc
+        
         repository = dc.SequenceRepository()
         for plasmid_path in plasmid:
             # Get all files in the directory but exclude CSV files and other non-sequence files
