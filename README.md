@@ -6,6 +6,22 @@ A golden gate assembly tool built on top of the [dnacauldron](https://github.com
 
 This tool processes golden gate assemblies based on assembly plans defined in CSV files. It uses the dnacauldron library to simulate and validate assemblies, generating detailed reports with visualization plots.
 
+### Understanding Golden Gate Assembly
+
+For a comprehensive introduction to golden gate assembly, we highly recommend watching this [Golden Gate Assembly Tutorial Playlist](https://www.youtube.com/playlist?list=PL6QzDyD7sgZiGAzO3JRO0uJd2U-sCPawI) - it's essential viewing to understand the principles and methodology.
+
+### Assembly Hierarchy
+
+This tool implements a hierarchical golden gate assembly system:
+
+- **L0 → L1 Assembly**: Uses **BsaI** enzyme to combine small parts (promoters, coding sequences, terminators) into transcriptional units
+- **L1 → L2 Assembly**: Uses **BbsI** enzyme to combine transcriptional units into larger constructs
+
+**Assembly Levels:**
+- **L0**: Small genetic parts (promoters, terminators, individual genes)
+- **L1**: Transcriptional units (promoter + CDS + terminator combinations)
+- **L2**: Multi-gene constructs (multiple transcriptional units combined)
+
 ## Features
 
 - **Assembly Plan Processing**: Reads assembly plans from `assembly.csv` files defining constructs and their components
