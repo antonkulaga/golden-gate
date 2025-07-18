@@ -9,12 +9,14 @@ authors = [
 requires-python = ">=3.11"
 dependencies = [
     "dnacauldron>=2.0.12",
+    "pdf-reports>=0.3.9",
     "pycomfort>=0.0.18",
     "typer>=0.9.0",
 ]
 
 [project.scripts]
-golden-gate = "golden_gate:main"
+golden-gate = "golden_gate.cli:app"
+assembly = "golden_gate.cli:app"
 
 [build-system]
 requires = ["hatchling"]
