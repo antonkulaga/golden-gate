@@ -29,6 +29,10 @@ Then clone and set up the project:
 ```bash
 git clone <repository-url>
 cd golden-gate
+# Enable Git LFS (Large File Storage) for handling large sequence files
+# This is required to properly download GenBank files, plasmid sequences, and other binary data
+git lfs install
+git lfs pull
 ```
 
 ## Usage
