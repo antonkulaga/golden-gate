@@ -209,3 +209,4 @@ __marimo__/
 # Mac OS
 .DS_Store
 .~*
+data/output/assemblies/*

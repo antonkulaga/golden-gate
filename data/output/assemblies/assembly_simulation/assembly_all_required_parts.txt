@@ -1,7 +1,6 @@
-p1_stat_tet3gr_slot_1_plasmid
-p2_8are_gal_slot_2_plasmid
-p3_pgg-lexa_slot_3_plasmid
-p4_induce_my_glow_slot_4
-p4_induce_my_glow_slot_4_2input
+p1_stat_gal4dbd_slot_1_v2_plasmid
+p2_8are_vp16_slot_2_v2_plasmid
+p3_chop_cre_slot_3_v2_plasmid
+p4_output_gal4vp16_cre_v2_plasmid
 pICH41780
 ppd1101_integration_vector
